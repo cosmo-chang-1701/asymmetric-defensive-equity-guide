@@ -16,7 +16,7 @@ description: 附錄與參考資源導讀：匯整下行偏動差（LPM）與複�
 
 | 單元編號 | 單元名稱 | 內容摘要與實務價值 |
 | :--- | :--- | :--- |
-| **[附錄 A](01-mathematical-foundations.md)** | [下行偏差與偏動差嚴格數學推導](01-mathematical-foundations.md) | 下行偏動差（$LPM_n$）積分形式、階數經濟學意義、二階泰勒展開推導幾何平均收益與波動率拖累定理（Volatility Drag） |
+| **[附錄 A](01-mathematical-foundations.md)** | [下行偏差與偏動差嚴格數學推導](01-mathematical-foundations.md) | 下行偏動差（ $LPM_n$ ）積分形式、階數經濟學意義、二階泰勒展開推導幾何平均收益與波動率拖累定理（Volatility Drag） |
 | **[附錄 B](02-parameter-cheat-sheet.md)** | [全系統量化參數與敏感度速查表](02-parameter-cheat-sheet.md) | 涵蓋 PMPT、會計初篩、信用防線、體質評分、宏觀體制、動能突破與部位風控的所有基準值與安全敏感度區間 |
 | **[附錄 C](03-bibliography.md)** | [學術文獻與經典著作引用清單](03-bibliography.md) | 完整收錄本書所依據之 *The Journal of Finance*、*Journal of Financial Economics* 等頂級期刊文獻（APA 格式） |
 

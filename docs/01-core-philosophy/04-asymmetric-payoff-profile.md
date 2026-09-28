@@ -21,7 +21,7 @@ description: 闡明非對稱收益輪廓（Asymmetric Payoff Profile）的建構
 
 ## 資產配置的最優化目標函數
 
-對於由 $N$ 檔美股構成的投資權重向量 $\mathbf{w} = [w_1, w_2, \dots, w_N]^T$：
+對於由 $N$ 檔美股構成的投資權重向量 $\mathbf{w} = [w_1, w_2, \dots, w_N]^T$ ：
 
 ### 傳統 Markowitz 目標函數
 $$\max_{\mathbf{w}} \quad \mathbf{w}^T \boldsymbol{\mu} - \frac{\lambda}{2} \mathbf{w}^T \boldsymbol{\Sigma} \mathbf{w} \quad \text{s.t.} \quad \sum_{i=1}^N w_i = 1, \; w_i \ge 0$$

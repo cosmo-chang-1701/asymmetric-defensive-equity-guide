@@ -6,7 +6,9 @@
 [![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED.svg)](engine/Dockerfile)
 [![Tests](https://img.shields.io/badge/Tests-13%20Passed-brightgreen.svg)](tests/)
+[![GitBook](https://img.shields.io/badge/GitBook-Online%20Docs-3884FF?logo=gitbook&logoColor=white)](https://semantic-cosmos.gitbook.io/asymmetric-defensive-equity-guide/)
 
+> **GitBook 在線閱覽**: https://semantic-cosmos.gitbook.io/asymmetric-defensive-equity-guide/  
 > **Framework**: 後現代投資組合理論（PMPT）與實證資產定價（Empirical Asset Pricing）  
 > **Target Audience**: 專業投資機構經理人、量化交易員、高階個人投資者  
 
@@ -26,6 +28,8 @@
 ---
 
 ## 目錄導覽（Book Contents）
+
+> 📖 **GitBook 在線閱覽連結**: [https://semantic-cosmos.gitbook.io/asymmetric-defensive-equity-guide/](https://semantic-cosmos.gitbook.io/asymmetric-defensive-equity-guide/)
 
 完整教材文檔位於 [`docs/`](docs/) 目錄，可配合 [`docs/SUMMARY.md`](docs/SUMMARY.md) 循序研讀：
 

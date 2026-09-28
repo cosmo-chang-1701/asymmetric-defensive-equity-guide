@@ -64,7 +64,7 @@ classDiagram
 ### 2. 多維度選股篩選模組：[`engine/screening.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/screening.py)
 負責基本面與技術面的六層過濾：
 - **`FinancialMetrics`**：強型別數據類別（dataclass），定義 Sloan 應計因子、Altman 5 項變數及 Piotroski 9 項財務指標。
-- **`calculate_sloan_accrual()`**：計算應計利潤佔總資產比率，超標（$> 0.10$）一票否決。
+- **`calculate_sloan_accrual()`**：計算應計利潤佔總資產比率，超標（ $> 0.10$ ）一票否決。
 - **`calculate_piotroski_f_score()`**：嚴格計算 0~9 分之評分。
 - **`calculate_altman_z_score()`**：回傳精確 Z-Score 數值。
 - **`check_weinstein_stage2()`**：檢驗股價高於 200 SMA 且均線斜率向上。
@@ -75,7 +75,7 @@ classDiagram
 - **`MarketRegime`**：列舉類別，定義 `REGIME_1_BULL`、`REGIME_TRANSITION_NEUTRAL` 與 `REGIME_2_EXTREME_STRESS`。
 - **`identify_market_regime()`**：依據 SPY 均線與 VIX 數值進行原子化狀態轉移。
 - **`validate_right_side_entry()`**：驗證 52 週新高突破與 1.5 倍放量條件。
-- **`validate_left_side_entry()`**：驗證 $F\text{-Score} \ge 8$、$Z\text{-Score} > 2.99$ 且估值處於前 5% 歷史分位。
+- **`validate_left_side_entry()`**：驗證 $F\text{-Score} \ge 8$ 與 $Z\text{-Score} > 2.99$ 且估值處於前 5% 歷史分位。
 - **`calculate_pyramid_tranche()`**：計算金字塔三批次（25% / 35% / 40%）的絕對配置金額。
 
 ### 4. 非對稱風控與部位模組：[`engine/risk.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/risk.py)

@@ -34,7 +34,7 @@ flowchart TD
 ```
 
 ### 入場條件（Entry Signals）：
-1. **標的池歸屬**：標的已通過第二章之基本面高質量初篩（$F\text{-Score} \ge 7, \text{Sloan Ratio} \le 0.10, \text{ROIC} \ge 15\%$）；
+1. **標的池歸屬**：標的已通過第二章之基本面高質量初篩（ $F\text{-Score} \ge 7, \text{Sloan Ratio} \le 0.10, \text{ROIC} \ge 15\%$ ）；
 2. **基底突破（Pivot Point Breakout）**：價格突破長達數週（至少 6 至 8 週）之整固基底（Base Pattern）之高點阻力位，或創下 52 週新高（52-Week High Breakout）：
    $$P_t > \max(P_{t-1}, P_{t-2}, \dots, P_{t-252})$$
 3. **成交量放量確認（Volume Confirmation）**：突破當日成交量必須放大至 50 日均量（50-day Volume MA）的 1.5 倍以上：

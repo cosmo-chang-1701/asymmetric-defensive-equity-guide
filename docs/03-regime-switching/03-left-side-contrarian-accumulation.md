@@ -26,8 +26,8 @@ Werner De Bondt 與 Richard Thaler 於 1985 年在 *The Journal of Finance* 發�
 > 若在空頭市場對普通股票或平庸企業盲目「逢低加碼（Averaging Down）」，常會面臨破產下市或價值陷阱。因此，本體系將左側建倉限制在極為嚴苛的邊界條件之內。
 
 ### 啟動門檻（Activation Gate）：
-1. **宏觀恐慌狀態**：$\text{VIX} > 30$ 或大盤自高點急性回撤超過 15%（流動性枯竭期）；
-2. **標的極致韌性**：標的之 Piotroski $F\text{-Score} \ge 8$ 且 Altman $Z\text{-Score} > 2.99$（資產負債表具備抵禦大蕭條級別衝擊的無風險防禦力）；
+1. **宏觀恐慌狀態**： $\text{VIX} > 30$ 或大盤自高點急性回撤超過 15%（流動性枯竭期）；
+2. **標的極致韌性**：標的之 Piotroski $F\text{-Score} \ge 8$ 且 Altman $Z\text{-Score} > 2.99$ （資產負債表具備抵禦大蕭條級別衝擊的無風險防禦力）；
 3. **估值跌入歷史極值分位**：標的之滾動本益比（P/E）或市現率（P/OCF）處於過去 10 年歷史序列的**前 5% 最低分位數（5th Percentile）**：
    $$\text{PercentileRank}(\text{Valuation}_t) \le 0.05$$
 
@@ -62,7 +62,7 @@ flowchart TD
 
 ## 🎯 本節核心要點 (Key Takeaways)
 
-1. **左側抄底僅限極品**：必須滿足 $F\text{-Score} \ge 8$ 且 $Z\text{-Score} > 2.99$，杜絕任何破產風險。
+1. **左側抄底僅限極品**：必須滿足 $F\text{-Score} \ge 8$ 且 $Z\text{-Score} > 2.99$ ，杜絕任何破產風險。
 2. **前 5% 估值極值**：僅在市場流動性錯殺至歷史極端區間時啟動，避免過早介入「接飛刀」。
 3. **金字塔分批紀律**：以 25% / 35% / 40% 漸進加碼，保持充裕現金彈性，並設定基本面熔斷終止條件。
 

@@ -4,6 +4,7 @@ description: 非對稱防禦型美股策略指南：立足後現代投資組合�
 
 # 非對稱防禦型美股策略指南：索提諾比率優化與雙向體制交易框架
 
+> **GitBook 在線閱覽**: https://semantic-cosmos.gitbook.io/asymmetric-defensive-equity-guide/  
 > **理論框架**: 後現代投資組合理論（PMPT）與實證資產定價（Empirical Asset Pricing）  
 > **目標受眾**: 專業投資機構經理人、量化交易員、高階個人投資者  
 > **聲明**: 本專案為使用 AI 撰寫之量化交易與資產配置學習教材，僅供學術交流與程式開發研究使用，不構成任何投資建議。  
@@ -36,11 +37,11 @@ flowchart LR
 ## 🏛️ 全書核心四大支柱
 
 1. **索提諾比率（Sortino Ratio）目標函數優化**：  
-   定義最小可接受報酬率（$MAR$），專注極小化下行偏差（Downside Deviation, $DD$），構建具備「右偏肥尾」特徵的非對稱收益輪廓。
+   定義最小可接受報酬率（ $MAR$ ），專注極小化下行偏差（Downside Deviation, $DD$ ），構建具備「右偏肥尾」特徵的非對稱收益輪廓。
 2. **基本面因子初篩與技術結構過濾**：  
    融合 Sloan (1996) 應計利潤異象、Piotroski (2000) $F\text{-Score}$ 財務體質模型、Altman (1968) $Z\text{-Score}$ 破產風險過濾，結合 Fama-French 五因子高 ROIC 與持續正向自由現金流（FCF Yield），並以 Stan Weinstein 階段分析與 200 SMA 鎖定主升段標的。
 3. **雙向體制切換引擎（Regime-Switching Engine）**：  
-   量化劃分市場宏觀狀態。於常態多頭環境中實施嚴格的**右側動能突破交易（Right-Side Momentum）**；於極端恐慌與流動性衝擊時，針對基本面無懈可擊（$F\text{-Score} \ge 8$）且估值跌入歷史極低分位的標的，啟動系統化**左側金字塔分批建倉（Left-Side Value Accumulation）**。
+   量化劃分市場宏觀狀態。於常態多頭環境中實施嚴格的**右側動能突破交易（Right-Side Momentum）**；於極端恐慌與流動性衝擊時，針對基本面無懈可擊（ $F\text{-Score} \ge 8$ ）且估值跌入歷史極低分位的標的，啟動系統化**左側金字塔分批建倉（Left-Side Value Accumulation）**。
 4. **非對稱剛性風控與放寬停利（Asymmetric Risk Management）**：  
    立足於 Bessembinder (2018) 的跨世紀實證結論——美股跨期全部淨超額財富僅由前 4% 的極少數超級贏家驅動。個股看錯必須透過 ATR 吊燈停損（Chandelier Exit）與固定比例風險模型（Fixed Fractional Risk）將單筆 NAV 虧損嚴格截斷於 1%~1.5%；看對時則極限放寬停利，以移動均線與基本面質變為離場條件，充分享受贏家複利。
 

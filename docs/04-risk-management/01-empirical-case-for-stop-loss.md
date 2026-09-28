@@ -46,7 +46,7 @@ $$R_{\text{recovery}} = \frac{1}{1 - L} - 1 = \frac{L}{1 - L}$$
 ## 2. 行為金融學視角：Kahneman & Tversky (1979) 展望理論與處置效應
 
 Daniel Kahneman 與 Amos Tversky 於 1979 年在 *Econometrica* 提出的**展望理論（Prospect Theory）**指出了人類非理性決策的兩大特徵：
-1. **S 型價值函數（S-Shaped Value Function）**：人們對虧損的敏感度遠大於獲利（損失厭惡係數 $\lambda \approx 2.25$）；
+1. **S 型價值函數（S-Shaped Value Function）**：人們對虧損的敏感度遠大於獲利（損失厭惡係數 $\lambda \approx 2.25$ ）；
 2. **獲利區風險厭惡，虧損區風險尋求**：在面對獲利時，投資人傾向落袋為安（凹函數，Concave）；而在面對虧損時，投資人為了避免兌現痛苦，反而轉變為「風險尋求者（Risk-Seeking）」，傾向死扛套牢甚至盲目攤平（凸函數，Convex）。
 
 Shefrin & Statman (1985) 將此現象定義為**處置效應（Disposition Effect）**：

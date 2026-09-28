@@ -16,16 +16,16 @@ description: 深入剖析現代投資組合理論（MPT）均值-變異數架構
 自 Harry Markowitz 於 1952 年發表里程碑式的論文《Portfolio Selection》以來，現代投資組合理論（Modern Portfolio Theory, 簡稱 MPT）奠定了過去半個世紀學院派與華爾街資產配置的基石。Markowitz 框架建立於均值-變異數（Mean-Variance Optimization, MVO）之上，其核心假設可歸結為兩大公理：
 
 1. **投資人為風險厭惡者（Risk-Averse）**：在給定預期回報下追求變異數極小化；或在給定變異數下追求預期回報極大化。
-2. **資產回報率服從多元聯合常態分佈（Multivariate Normal Distribution）**：資產組合的分佈特徵可完全由前兩階動差——均值（Mean, $\mu$）與變異數（Variance, $\sigma^2$）——充分表徵。
+2. **資產回報率服從多元聯合常態分佈（Multivariate Normal Distribution）**：資產組合的分佈特徵可完全由前兩階動差——均值（Mean, $\mu$ ）與變異數（Variance, $\sigma^2$ ）——充分表徵。
 
 基於此架構，William Sharpe 於 1966 年提出了廣為人知的夏普比率（Sharpe Ratio, 原名 Reward-to-Variability Ratio）：
 
 $$\text{Sharpe Ratio} = \frac{\mathbb{E}[R_p] - R_f}{\sigma_p}$$
 
 其中：
-- $\mathbb{E}[R_p]$：投資組合預期報酬率；
-- $R_f$：無風險利率（Risk-Free Rate）；
-- $\sigma_p = \sqrt{\mathrm{Var}(R_p)}$：投資組合總回報的標準差。
+- $\mathbb{E}[R_p]$ ：投資組合預期報酬率；
+- $R_f$ ：無風險利率（Risk-Free Rate）；
+- $\sigma_p = \sqrt{\mathrm{Var}(R_p)}$ ：投資組合總回報的標準差。
 
 ---
 
@@ -56,10 +56,10 @@ flowchart LR
 > [!WARNING]
 > **對稱風險懲罰的悖論**：  
 > 假設存在兩組策略 A 與 B：
-> - **策略 A**：每月穩定獲利 1%，波動極低（標準差 $\sigma_A \approx 0.1\%$），幾乎無暴賺亦無暴賠。
+> - **策略 A**：每月穩定獲利 1%，波動極低（標準差 $\sigma_A \approx 0.1\%$ ），幾乎無暴賺亦無暴賠。
 > - **策略 B**：在保持下行受控（從不單月虧損超過 1%）的前提下，經常出現單月 +15%、+25% 的非對稱暴賺。
 > 
-> 在 MPT 與 Sharpe Ratio 的計算中，策略 B 由於上行爆發力帶來極高的樣本總變異數 $\sigma_B$，其計算出的夏普比率可能遠遠低於平庸的策略 A。這在經濟學與真實投資心理上是荒謬的——**理性投資人從不畏懼資產向上暴漲帶來的「波動」，他們唯一恐懼的是資產跌破安全底線的「下行虧損」**。
+> 在 MPT 與 Sharpe Ratio 的計算中，策略 B 由於上行爆發力帶來極高的樣本總變異數 $\sigma_B$ ，其計算出的夏普比率可能遠遠低於平庸的策略 A。這在經濟學與真實投資心理上是荒謬的——**理性投資人從不畏懼資產向上暴漲帶來的「波動」，他們唯一恐懼的是資產跌破安全底線的「下行虧損」**。
 
 ---
 

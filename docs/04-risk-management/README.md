@@ -19,7 +19,7 @@ description: 第四章非對稱風控系統導讀：基於幾何複利非對稱�
 1. **理解幾何平均回報的對稱性破缺**：推導虧損修復的指數級難度，論證資本保全公理。
 2. **根除處置效應（Disposition Effect）**：剖析展望理論中的損失厭惡與虧損區風險尋求心理，以代碼強制執行決策。
 3. **領悟 Bessembinder 4% 超級贏家定理**：理解為何美股跨期全部淨超額財富僅由 4% 股票貢獻，領悟「截斷 96% 平庸、擁抱 4% 傳奇」之真諦。
-4. **精通自適應部位與移動停利體系**：掌握 Wilder (1978) ATR 吊燈停損、Ralph Vince 固定比例風險模型（$R$-Risk），以及四階段移動停利機制。
+4. **精通自適應部位與移動停利體系**：掌握 Wilder (1978) ATR 吊燈停損、Ralph Vince 固定比例風險模型（ $R\text{-Risk}$ ），以及四階段移動停利機制。
 
 ---
 
@@ -54,7 +54,7 @@ flowchart TD
 | 章節編號 | 單元名稱 | 核心論點與理論依據 | 對應 Python 代碼模組 |
 | :--- | :--- | :--- | :--- |
 | **[4.1](01-empirical-case-for-stop-loss.md)** | [為什麼必須嚴格停損？](01-empirical-case-for-stop-loss.md) | 幾何複利損耗推導、Kahneman-Tversky (1979) 展望理論、Bessembinder (2018) 4% 超級贏家定理 | [`engine/risk.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/risk.py) |
-| **[4.2](02-rigid-stop-loss-framework.md)** | [剛性停損執行框架](02-rigid-stop-loss-framework.md) | Wilder (1978) ATR 吊燈停損、Ralph Vince (1990) 固定比例風險模型（$R$-Risk）與部位計算 | [`engine/risk.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/risk.py) |
+| **[4.2](02-rigid-stop-loss-framework.md)** | [剛性停損執行框架](02-rigid-stop-loss-framework.md) | Wilder (1978) ATR 吊燈停損、Ralph Vince (1990) 固定比例風險模型（ $R\text{-Risk}$ ）與部位計算 | [`engine/risk.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/risk.py) |
 | **[4.3](03-trailing-stop-and-fat-tail-capture.md)** | [放寬停利與長期持有](03-trailing-stop-and-fat-tail-capture.md) | 正偏態肥尾捕捉機制、四階段動態移動停利與基本面質變一票否決機制 | [`engine/risk.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/risk.py) |
 | **[4.4](04-lifecycle-risk-matrix.md)** | [風控與部位管理全生命週期矩陣](04-lifecycle-risk-matrix.md) | 風控綜合決策矩陣、部位全生命週期演算法偽代碼與程式碼實現 | [`engine/risk.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/risk.py) |
 

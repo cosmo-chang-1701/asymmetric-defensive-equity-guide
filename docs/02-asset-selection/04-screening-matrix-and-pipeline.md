@@ -20,8 +20,8 @@ description: 多維度標的初篩綜合決策矩陣與演算法管線（Pipelin
 | 檢驗層次 | 檢驗模組 | 指標名稱 | 嚴格准入條件 (Pass Criteria) | 違規處理動作 |
 | :--- | :--- | :--- | :--- | :--- |
 | **第一層：會計品質** | Sloan (1996) | 應計比率 (Accrual Ratio) | $\text{Accrual Ratio} \le 0.10$ | 剔除標的（盈餘操縱風險） |
-| **第二層：信用韌性** | Altman (1968) | $Z\text{-Score}$ | $Z > 2.99$（極限寬限至 $Z \ge 1.81$） | $Z < 1.81$ 立即一票否決 |
-| **第三層：經營體質** | Piotroski (2000) | $F\text{-Score}$ | 常態體制 $\ge 7$；恐慌體制 $\ge 8$ | 未達標則不予放行 |
+| **第二層：信用韌性** | Altman (1968) | $Z\text{-Score}$ | $Z > 2.99$ （極限寬限至 $Z \ge 1.81$ ） | $Z < 1.81$ 立即一票否決 |
+| **第三層：經營體質** | Piotroski (2000) | $F\text{-Score}$ | 常態體制 $\ge 7$ ；恐慌體制 $\ge 8$ | 未達標則不予放行 |
 | **第四層：資本回報** | Fama-French | $\text{ROIC}$ & $\text{FCF Yield}$ | 3 年均 $\text{ROIC} \ge 15\%$ 且 $\text{FCF} > 0$ | 剔除標的（缺乏護城河） |
 | **第五層：市場階段** | Weinstein (1988) | Stage 週期分析 | 處於 Stage 2 突破或延續 | Stage 1 觀察，Stage 3/4 剔除 |
 | **第六層：長線趨勢** | Brock et al. (1992) | 200-day SMA | $P_t > \text{SMA}_{200}$ 且斜率為正 | 違背則右側禁開倉 |

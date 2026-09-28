@@ -36,9 +36,9 @@ $$\text{Regime}_{\text{Trend}} = \begin{cases}
 ### 2. CBOE 波動率指數隱含狀態（VIX Volatility Regime）
 
 芝加哥期權交易所波動率指數（VIX）代表標普 500 期權的 30 天隱含波動率，被廣泛視為市場的「恐慌指標」：
-- **低波常態區（Low-Vol Stability）**：$\text{VIX} < 20$
-- **過渡震盪區（Elevated Volatility）**：$20 \le \text{VIX} \le 30$
-- **極端恐慌區（Crisis Stress / Liquidity Shock）**：$\text{VIX} > 30$（若 $\text{VIX} > 40$，標誌歷史級別踩踏）
+- **低波常態區（Low-Vol Stability）**： $\text{VIX} < 20$
+- **過渡震盪區（Elevated Volatility）**： $20 \le \text{VIX} \le 30$
+- **極端恐慌區（Crisis Stress / Liquidity Shock）**： $\text{VIX} > 30$ （若 $\text{VIX} > 40$ ，標誌歷史級別踩踏）
 
 ### 3. 美股市場寬度（Market Breadth）
 

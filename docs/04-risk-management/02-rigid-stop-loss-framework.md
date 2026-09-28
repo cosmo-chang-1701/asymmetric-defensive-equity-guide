@@ -31,13 +31,13 @@ $$\text{ATR}_{14}(t) = \frac{1}{14} \sum_{i=0}^{13} \text{TR}_{t-i}$$
 
 $$\text{StopLoss}_{\text{initial}} = P_{\text{entry}} - K \times \text{ATR}_{14}(t_{\text{entry}})$$
 
-在實務基準中，乘數取 $K = 2.5$。若 $2.5 \times \text{ATR}_{14}$ 的絕對跌幅超過進場價的 8%，則強制收緊至最大上限 8%（防止低波時期轉入極端暴跌時停損距離過寬）。
+在實務基準中，乘數取 $K = 2.5$ 。若 $2.5 \times \text{ATR}_{14}$ 的絕對跌幅超過進場價的 8%，則強制收緊至最大上限 8%（防止低波時期轉入極端暴跌時停損距離過寬）。
 
 ---
 
 ## 2. 組合單筆風險上限：固定比例風險模型（Fixed Fractional Risk Model）
 
-Ralph Vince (1990) 指出，倉位管理的核心不在於單次買多少股，而在於**「這筆交易如果看錯停損，最多只允許損失整體組合 NAV 的多少百分比」**。這即是專業機構的 $R$-風險模型（$R$-Risk Model）。
+Ralph Vince (1990) 指出，倉位管理的核心不在於單次買多少股，而在於**「這筆交易如果看錯停損，最多只允許損失整體組合 NAV 的多少百分比」**。這即是專業機構的 $R$ -風險模型（ $R\text{-Risk Model}$ ）。
 
 ```mermaid
 flowchart LR
@@ -52,7 +52,7 @@ flowchart LR
 
 ### 數學公式：
 
-設投資組合當前總淨值為 $\text{NAV}$，單筆交易允許承擔的最大風險比例為 $R \in [1.0\%, 1.5\%]$：
+設投資組合當前總淨值為 $\text{NAV}$ ，單筆交易允許承擔的最大風險比例為 $R \in [1.0\%, 1.5\%]$ ：
 
 $$\text{Capital at Risk} = \text{NAV} \times R$$
 
@@ -66,7 +66,7 @@ $$\text{Position Value} = S \times P_{\text{entry}} \le \text{Max Allocation Lim
 
 > [!WARNING]
 > **倉位逆向調節鐵律**：  
-> 當標的波動度劇烈（$\text{ATR}$ 很大）時，$\text{Unit Risk}$ 變大，公式會**自動降低**可買入股數 $S$，從而限制總體風險暴露；當標的走勢平穩扎實（$\text{ATR}$ 較小）時，系統才允許分配較大名目部位。這確保了組合中每一筆交易對整體 NAV 的衝擊力是嚴格等權重的。
+> 當標的波動度劇烈（ $\text{ATR}$ 很大）時， $\text{Unit Risk}$ 變大，公式會**自動降低**可買入股數 $S$ ，從而限制總體風險暴露；當標的走勢平穩扎實（ $\text{ATR}$ 較小）時，系統才允許分配較大名目部位。這確保了組合中每一筆交易對整體 NAV 的衝擊力是嚴格等權重的。
 
 ---
 

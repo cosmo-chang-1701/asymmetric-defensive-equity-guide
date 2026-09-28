@@ -18,7 +18,7 @@ description: 第一章核心哲學導讀：深入後現代投資組合理論（P
 ### 🎯 核心學習目標
 1. **洞悉夏普比率的對稱性懲罰缺陷**：理解為何追求夏普比率最大化會誤殺具備爆發性正偏態收益的優質策略。
 2. **理解金融肥尾與非對稱分佈**：掌握 Mandelbrot 與 Fama 揭示的金融資產高階動差（偏態與超額峰度）特徵。
-3. **精通索提諾比率的嚴格數學模型**：掌握二階下行偏動差（$LPM_2$）與離散下行偏差（$DD$）的推導邏輯與自由度辨析。
+3. **精通索提諾比率的嚴格數學模型**：掌握二階下行偏動差（ $LPM_2$ ）與離散下行偏差（ $DD$ ）的推導邏輯與自由度辨析。
 4. **確立非對稱收益輪廓的構建途徑**：理解如何將「長線持有的低摩擦」與「剛性停損的左側截斷」融合成正偏態收益曲線。
 
 ---
@@ -45,7 +45,7 @@ flowchart TD
 | :--- | :--- | :--- | :--- |
 | **[1.1](01-mpt-and-sharpe-flaws.md)** | [MPT 與夏普比率的內在缺陷](01-mpt-and-sharpe-flaws.md) | Markowitz (1952)、Sharpe (1966)；分析離均差平方對獲利波動的懲罰悖論 | [`engine/pmpt.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/pmpt.py) |
 | **[1.2](02-fat-tails-and-skewness.md)** | [金融肥尾與非對稱分佈](02-fat-tails-and-skewness.md) | Mandelbrot (1963)、Fama (1965)；高斯常態分佈 vs 實際肥尾偏態特徵對比 | [`engine/pmpt.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/pmpt.py) |
-| **[1.3](03-sortino-ratio-derivation.md)** | [索提諾比率推導與優化](03-sortino-ratio-derivation.md) | Sortino & van der Meer (1991)、Sortino & Price (1994)；$LPM_2$ 與 $DD$ 連續/離散公式 | [`engine/pmpt.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/pmpt.py) |
+| **[1.3](03-sortino-ratio-derivation.md)** | [索提諾比率推導與優化](03-sortino-ratio-derivation.md) | Sortino & van der Meer (1991)、Sortino & Price (1994)； $LPM_2$ 與 $DD$ 連續/離散公式 | [`engine/pmpt.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/pmpt.py) |
 | **[1.4](04-asymmetric-payoff-profile.md)** | [長線持有與非對稱收益輪廓](04-asymmetric-payoff-profile.md) | PMPT 最佳化目標函數與正偏態幾何收益輪廓的工程實現途徑 | [`engine/pmpt.py`](file:///home/cosmo_chang/Projects/asymmetric-defensive-equity-guide/engine/pmpt.py) |
 
 ---
