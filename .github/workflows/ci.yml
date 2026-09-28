@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test-docker:
+    name: Build & Test (Docker)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Engine Docker Image
+        run: |
+          docker build -t asymmetric-engine -f engine/Dockerfile .
+
+      - name: Run Engine Tests in Docker
+        run: |
+          docker run --rm asymmetric-engine pytest -v tests/
+
+      - name: Run Pipeline Demo in Docker
+        run: |
+          docker run --rm asymmetric-engine python3 examples/pipeline_demo.py

@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asymmetric-defensive-engine"
+version = "1.0.0"
+description = "PMPT US Equity Strategy Engine - Sortino Optimization, Dual-Regime Switching, Screening, and Risk Management"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Cosmo Chang", email = "cosmo.chang1701@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "numpy>=1.26.0",
+    "pandas>=2.2.0",
+    "scipy>=1.12.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["engine*"]

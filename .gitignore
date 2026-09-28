@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / Pylance / IDE
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.idea/
+.vscode/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
