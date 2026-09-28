@@ -30,11 +30,13 @@
 完整教材文檔位於 [`docs/`](docs/) 目錄，可配合 [`docs/SUMMARY.md`](docs/SUMMARY.md) 循序研讀：
 
 - [前言與全書綱要](docs/README.md)
-- [第一章：核心哲學——後現代投資組合理論與索提諾比率](docs/chapter-1-core-philosophy/index.md)
-- [第二章：標的挑選體系——基本面因子與技術面過濾](docs/chapter-2-asset-selection/index.md)
-- [第三章：動態體制切換機制——雙向交易執行框架](docs/chapter-3-regime-switching/index.md)
-- [第四章：非對稱風控系統——剛性停損與極限放寬停利](docs/chapter-4-risk-management/index.md)
-- [附錄：數學推導與實務決策速查](docs/appendix/mathematical-foundations.md)
+- [快速開始：Docker 環境與量化引擎](docs/05-engine-and-quickstart/01-docker-and-environment.md)
+- [第一章：核心哲學——後現代投資組合理論與索提諾比率](docs/01-core-philosophy/README.md)
+- [第二章：標的挑選體系——基本面因子與技術面過濾](docs/02-asset-selection/README.md)
+- [第三章：動態體制切換機制——雙向交易執行框架](docs/03-regime-switching/README.md)
+- [第四章：非對稱風控系統——剛性停損與極限放寬停利](docs/04-risk-management/README.md)
+- [實戰示範：端到端量化管線演練](docs/05-engine-and-quickstart/03-e2e-pipeline-walkthrough.md)
+- [附錄：數學推導與實務決策速查](docs/06-appendix/README.md)
 
 ---
 
@@ -42,14 +44,16 @@
 
 ```
 asymmetric-defensive-equity-guide/
+├── .gitbook.yaml               # GitBook Git Sync 配置設定檔
 ├── docs/                       # 教材手冊與學術理論文檔 (CC BY-NC 4.0)
-│   ├── SUMMARY.md              # 書籍章節索引 (mdBook 相容)
-│   ├── README.md               # 教材導讀
-│   ├── chapter-1-core-philosophy/
-│   ├── chapter-2-asset-selection/
-│   ├── chapter-3-regime-switching/
-│   ├── chapter-4-risk-management/
-│   └── appendix/
+│   ├── SUMMARY.md              # 書籍章節索引 (GitBook & mdBook 相容)
+│   ├── README.md               # 教材導讀 Landing Page
+│   ├── 01-core-philosophy/     # 第一章：後現代投資組合與索提諾比率
+│   ├── 02-asset-selection/     # 第二章：標的挑選六層漏斗
+│   ├── 03-regime-switching/    # 第三章：動態雙向體制切換
+│   ├── 04-risk-management/     # 第四章：非對稱剛性風控
+│   ├── 05-engine-and-quickstart/ # 第五章：量化引擎與實戰導覽
+│   └── 06-appendix/            # 第六章：數學推導、參數與文獻清單
 ├── engine/                     # 純 Python 核心量化引擎 (MIT)
 │   ├── __init__.py
 │   ├── pmpt.py                 # 下行偏差與索提諾比率計算
