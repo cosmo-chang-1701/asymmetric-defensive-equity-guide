@@ -1,0 +1,5 @@
+# GitBook Space-Level Configuration
+root: ./
+structure:
+  readme: README.md
+  summary: SUMMARY.md

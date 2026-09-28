@@ -44,8 +44,10 @@
 
 ```
 asymmetric-defensive-equity-guide/
-├── .gitbook.yaml               # GitBook Git Sync 配置設定檔
+├── gitbook-docs.yaml           # GitBook Site-Level Git Sync 配置設定檔
+├── .gitbook.yaml               # GitBook Space-Level Git Sync 配置設定檔
 ├── docs/                       # 教材手冊與學術理論文檔 (CC BY-NC 4.0)
+│   ├── .gitbook.yaml           # GitBook Space 目錄配置
 │   ├── SUMMARY.md              # 書籍章節索引 (GitBook & mdBook 相容)
 │   ├── README.md               # 教材導讀 Landing Page
 │   ├── 01-core-philosophy/     # 第一章：後現代投資組合與索提諾比率
