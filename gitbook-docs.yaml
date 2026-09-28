@@ -1,9 +1,47 @@
 $schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
+  title: 非對稱防禦型美股策略指南：索提諾比率優化與雙向體制交易框架
   structure:
-    - type: space
-      key: default
+    - type: section
+      key: section-docs
       title: 非對稱防禦型美股策略指南
-      path: /
-      content:
-        directory: ./docs
+      path: docs
+      default: true
+      children:
+        - type: space
+          key: space-01-core-philosophy
+          title: 第一章：核心哲學——後現代投資組合理論與索提諾比率
+          path: 01-core-philosophy
+          default: true
+          content:
+            directory: ./docs/01-core-philosophy
+        - type: space
+          key: space-02-asset-selection
+          title: 第二章：標的挑選體系——基本面因子與技術面過濾
+          path: 02-asset-selection
+          content:
+            directory: ./docs/02-asset-selection
+        - type: space
+          key: space-03-regime-switching
+          title: 第三章：動態體制切換機制——雙向交易執行框架
+          path: 03-regime-switching
+          content:
+            directory: ./docs/03-regime-switching
+        - type: space
+          key: space-04-risk-management
+          title: 第四章：非對稱風控系統——剛性停損與極限放寬停利
+          path: 04-risk-management
+          content:
+            directory: ./docs/04-risk-management
+        - type: space
+          key: space-05-engine-and-quickstart
+          title: 第五部分：量化引擎與實務實作（Quant Engine & Implementation）
+          path: 05-engine-and-quickstart
+          content:
+            directory: ./docs/05-engine-and-quickstart
+        - type: space
+          key: space-06-appendix
+          title: 第六部分：附錄與參考資源（Appendices & References）
+          path: 06-appendix
+          content:
+            directory: ./docs/06-appendix
